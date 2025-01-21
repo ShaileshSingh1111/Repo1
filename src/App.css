@@ -1,59 +1,62 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* src/App.css */
-body {
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-
-footer {
-  background-color: #282c34;
+input, select, button {
+  margin: 10px 0;
   padding: 10px;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.summary {
+  margin: 20px auto;
+  text-align: left;
+  width: 300px;
+}
+
+.transactions {
+  margin: 20px auto;
+  text-align: left;
+  width: 80%;
+}
+
+.transaction {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.transaction.income {
+  background-color: #c8f7c5;
+}
+
+.transaction.expense {
+  background-color: #f8d7da;
+}
